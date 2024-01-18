@@ -1,13 +1,20 @@
 body {
+    margin: 0;
+    overflow: hidden; /* Pour éviter les défilements dans la fenêtre du navigateur */
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace; /* Typographie type "terminal" */
+}
+
+#container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
-button {
+#fileName {
+    margin-top: 20px;
     font-size: 18px;
-    padding: 10px 20px;
-    cursor: pointer;
 }
