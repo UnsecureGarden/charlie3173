@@ -9,13 +9,13 @@ body {
 #container {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Ajusté pour espacer d'une seule ligne */
+    justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
 .element {
-    margin: 1em 0; /* Ajusté l'espacement vertical pour chaque élément à une ligne */
+    margin: 1em 0;
     font-size: 18px;
     text-align: center;
     color: white;
@@ -23,8 +23,7 @@ body {
 }
 
 #downloadLink {
-    /* Ajouté une règle pour ne pas souligner le lien */
-    text-decoration: none;
+    text-decoration: underline; /* Ajout du soulignement pour le lien de téléchargement */
 }
 
 #audioPlayer:focus + #downloadLink {
