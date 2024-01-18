@@ -15,7 +15,7 @@ body {
 }
 
 .element {
-    margin: 10px 0; /* Ajusté l'espacement vertical pour une meilleure apparence mobile */
+    margin: 10px 0; /* Ajusté l'espacement vertical pour chaque élément */
     font-size: 18px;
     text-align: center;
     color: white;
@@ -30,9 +30,13 @@ body {
     display: inline;
 }
 
-/* Styles spécifiques pour les appareils mobiles */
+/* Styles spécifiques pour les appareils mobiles et ordinateurs */
 @media only screen and (max-width: 600px) {
     #container {
-        padding: 20px; /* Ajout de marge autour du conteneur pour une meilleure apparence mobile */
+        padding: 20px;
+    }
+
+    .element {
+        margin: 10px 0; /* Ajusté l'espacement vertical pour chaque élément sur mobile */
     }
 }
