@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    overflow: hidden; /* Pour empêcher le défilement */
+    overflow: hidden;
     background-color: black;
     color: white;
     font-family: 'Courier New', Courier, monospace;
@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Hauteur de 100% de la fenêtre d'affichage */
+    height: 100vh;
 }
 
 .element {
@@ -26,11 +26,12 @@ body {
     margin: 1em 0;
 }
 
-#downloadLink {
+#downloadLink, #downloadLinkInstru {
     text-decoration: underline;
 }
 
-#audioPlayer:focus + #downloadLink {
+#audioPlayer:focus + #downloadLink,
+#audioPlayer:focus + #downloadLinkInstru {
     display: inline;
 }
 
