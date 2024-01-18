@@ -9,7 +9,7 @@ body {
 #container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center; /* Ajusté pour espacer d'une seule ligne */
     align-items: center;
     height: 100vh;
 }
