@@ -22,8 +22,12 @@ body {
     text-decoration: none;
 }
 
+#audioPlayer {
+    margin: 1em 0; /* Ajustement pour le centrage vertical du lecteur audio */
+}
+
 #downloadLink {
-    text-decoration: underline; /* Ajout du soulignement pour le lien de téléchargement */
+    text-decoration: underline;
 }
 
 #audioPlayer:focus + #downloadLink {
