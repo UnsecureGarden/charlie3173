@@ -9,17 +9,17 @@ body {
 #container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; /* Ajusté pour mieux répartir les éléments */
+    justify-content: space-around;
     align-items: center;
     height: 100vh;
 }
 
 .element {
-    margin: 20px 0;
+    margin: 10px 0; /* Ajusté l'espacement vertical pour une meilleure apparence mobile */
     font-size: 18px;
     text-align: center;
     color: white;
-    text-decoration: none; /* Supprime le soulignement du lien */
+    text-decoration: none;
 }
 
 #downloadLink {
@@ -28,4 +28,11 @@ body {
 
 #audioPlayer:focus + #downloadLink {
     display: inline;
+}
+
+/* Styles spécifiques pour les appareils mobiles */
+@media only screen and (max-width: 600px) {
+    #container {
+        padding: 20px; /* Ajout de marge autour du conteneur pour une meilleure apparence mobile */
+    }
 }
