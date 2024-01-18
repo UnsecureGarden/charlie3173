@@ -1,15 +1,15 @@
 body {
     margin: 0;
-    overflow: hidden; /* Pour éviter les défilements dans la fenêtre du navigateur */
+    overflow: hidden;
     background-color: black;
     color: white;
-    font-family: 'Courier New', Courier, monospace; /* Typographie type "terminal" */
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around; /* Ajusté pour mieux répartir les éléments */
     align-items: center;
     height: 100vh;
 }
@@ -18,12 +18,14 @@ body {
     margin: 20px 0;
     font-size: 18px;
     text-align: center;
+    color: white;
+    text-decoration: none; /* Supprime le soulignement du lien */
 }
 
 #downloadLink {
-    display: none; /* Cacher le lien de téléchargement par défaut */
+    display: none;
 }
 
 #audioPlayer:focus + #downloadLink {
-    display: inline; /* Afficher le lien de téléchargement lorsqu'il y a le focus sur le lecteur audio */
+    display: inline;
 }
