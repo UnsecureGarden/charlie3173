@@ -9,12 +9,21 @@ body {
 #container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
 }
 
-#fileName {
-    margin-top: 20px;
+.element {
+    margin: 20px 0;
     font-size: 18px;
+    text-align: center;
+}
+
+#downloadLink {
+    display: none; /* Cacher le lien de téléchargement par défaut */
+}
+
+#audioPlayer:focus + #downloadLink {
+    display: inline; /* Afficher le lien de téléchargement lorsqu'il y a le focus sur le lecteur audio */
 }
