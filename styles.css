@@ -9,13 +9,13 @@ body {
 #container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
 }
 
 .element {
-    margin: 10px 0; /* Ajusté l'espacement vertical pour chaque élément */
+    margin: 1em 0; /* Ajusté l'espacement vertical pour chaque élément à une ligne */
     font-size: 18px;
     text-align: center;
     color: white;
@@ -23,8 +23,8 @@ body {
 }
 
 #downloadLink {
-    /* Supprimez la ligne suivante pour rendre le texte "Download" toujours visible */
-    /* display: none; */
+    /* Ajouté une règle pour ne pas souligner le lien */
+    text-decoration: none;
 }
 
 #audioPlayer:focus + #downloadLink {
@@ -35,9 +35,5 @@ body {
 @media only screen and (max-width: 600px) {
     #container {
         padding: 20px;
-    }
-
-    .element {
-        margin: 10px 0; /* Ajusté l'espacement vertical pour chaque élément sur mobile */
     }
 }
