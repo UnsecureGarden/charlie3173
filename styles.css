@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    overflow: hidden;
+    overflow: hidden; /* Pour empêcher le défilement */
     background-color: black;
     color: white;
     font-family: 'Courier New', Courier, monospace;
@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Hauteur de 100% de la fenêtre d'affichage */
 }
 
 .element {
@@ -23,7 +23,7 @@ body {
 }
 
 #audioPlayer {
-    margin: 1em 0; /* Ajustement pour le centrage vertical du lecteur audio */
+    margin: 1em 0;
 }
 
 #downloadLink {
