@@ -23,7 +23,8 @@ body {
 }
 
 #downloadLink {
-    display: none;
+    /* Supprimez la ligne suivante pour rendre le texte "Download" toujours visible */
+    /* display: none; */
 }
 
 #audioPlayer:focus + #downloadLink {
