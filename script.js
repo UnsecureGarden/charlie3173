@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var audioPlayer = document.getElementById('audioPlayer');
 
     playButton.addEventListener('click', function () {
-        audioPlayer.play();
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+        } else {
+            audioPlayer.pause();
+        }
     });
 });
