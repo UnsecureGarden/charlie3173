@@ -28,8 +28,9 @@ body {
     margin: 1em 0;
 }
 
-.downloadLink {
+.downloadLink, .downloadLinkInstru, .downloadLinkDaniel {
     text-decoration: underline;
+    display: inline; /* Toujours visibles */
 }
 
 /* Styles spécifiques pour les appareils mobiles et ordinateurs */
@@ -37,12 +38,4 @@ body {
     .container {
         padding: 20px;
     }
-}
-
-.container:hover .downloadLink {
-    display: inline; /* Afficher au survol du conteneur */
-}
-
-.container:hover .downloadLinkInstru {
-    display: inline; /* Afficher au survol du conteneur */
 }
