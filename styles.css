@@ -6,12 +6,14 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-#container {
+/* Style pour le conteneur commun */
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-bottom: 20px; /* Espacement entre les blocs */
 }
 
 .element {
@@ -22,22 +24,21 @@ body {
     text-decoration: none;
 }
 
-#audioPlayer {
+.audioPlayer {
     margin: 1em 0;
 }
 
-#downloadLink, #downloadLinkInstru {
+.downloadLink {
     text-decoration: underline;
 }
 
-#audioPlayer:focus + #downloadLink,
-#audioPlayer:focus + #downloadLinkInstru {
+.audioPlayer:focus + .downloadLink {
     display: inline;
 }
 
 /* Styles spécifiques pour les appareils mobiles et ordinateurs */
 @media only screen and (max-width: 600px) {
-    #container {
+    .container {
         padding: 20px;
     }
 }
