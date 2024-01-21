@@ -30,12 +30,13 @@ body {
 
 .downloadLink, .downloadLinkInstru, .downloadLinkDaniel {
     text-decoration: underline;
+    display: none; /* Initialement masqués */
 }
 
-.audioPlayer:focus + .downloadLink,
-.audioPlayer:focus + .downloadLinkInstru,
-.audioPlayer:focus + .downloadLinkDaniel {
-    display: inline;
+.container:hover .downloadLink,
+.container:hover .downloadLinkInstru,
+.container:hover .downloadLinkDaniel {
+    display: inline; /* Afficher au survol du conteneur */
 }
 
 /* Styles spécifiques pour les appareils mobiles et ordinateurs */
