@@ -6,14 +6,13 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* Style pour le conteneur commun */
-.container {
+/* Style pour chaque élément */
+.elementContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin-bottom: 20px; /* Espacement entre les blocs */
+    margin-bottom: 20px; /* Espacement entre les éléments */
 }
 
 .element {
@@ -28,14 +27,6 @@ body {
     margin: 1em 0;
 }
 
-.downloadLink, .downloadLinkInstru, .downloadLinkDaniel {
+.downloadLink, .downloadLinkInstru {
     text-decoration: underline;
-    display: inline; /* Toujours visibles */
-}
-
-/* Styles spécifiques pour les appareils mobiles et ordinateurs */
-@media only screen and (max-width: 600px) {
-    .container {
-        padding: 20px;
-    }
 }
