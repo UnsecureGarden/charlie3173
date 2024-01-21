@@ -28,11 +28,13 @@ body {
     margin: 1em 0;
 }
 
-.downloadLink {
+.downloadLink, .downloadLinkInstru, .downloadLinkDaniel {
     text-decoration: underline;
 }
 
-.audioPlayer:focus + .downloadLink {
+.audioPlayer:focus + .downloadLink,
+.audioPlayer:focus + .downloadLinkInstru,
+.audioPlayer:focus + .downloadLinkDaniel {
     display: inline;
 }
 
