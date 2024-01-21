@@ -23,8 +23,22 @@ body {
     text-decoration: none;
 }
 
+.mediaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .audioPlayer {
     margin: 1em 0;
+}
+
+.downloadLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .downloadLink, .downloadLinkInstru {
