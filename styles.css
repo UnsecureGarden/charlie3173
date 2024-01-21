@@ -43,4 +43,5 @@ body {
 
 .downloadLink, .downloadLinkInstru {
     text-decoration: underline;
+    color: white; /* Couleur du texte en blanc */
 }
