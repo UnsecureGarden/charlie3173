@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    overflow: hidden;
+    overflow-y: auto; /* Activer le défilement vertical si nécessaire */
+    max-height: 100vh; /* Hauteur maximale égale à la hauteur de la fenêtre visible (viewport) */
     background-color: black;
     color: white;
     font-family: 'Courier New', Courier, monospace;
