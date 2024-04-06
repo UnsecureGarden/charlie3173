@@ -18,4 +18,10 @@ document.addEventListener('DOMContentLoaded', function () {
         var playButton = document.getElementById('playButton');
         playButton.style.display = 'block';  // Afficher le bouton lors de la pause
     });
+
+    // Ajout d'un écouteur d'événement sur le bouton "Clique ici" pour démarrer la lecture
+    var playButton = document.getElementById('playButton');
+    playButton.addEventListener('click', function () {
+        audioPlayer.play();
+    });
 });
